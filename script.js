@@ -1,29 +1,13 @@
-const form = document.querySelector('form');
-const loginBtn = document.getElementById('login-btn');
-const usernameInput = document.getElementById('username');
-const passwordInput = document.getElementById('password');
-const errorMessage = document.createElement('p');
+function checkLogin() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  const messageDiv = document.getElementById("message");
 
-function handleFormSubmit(event) {
-  event.preventDefault();
-
-  // Hier können Sie den Code hinzufügen, um Benutzername und Passwort zu überprüfen.
-  // Für diese Beispiel habe ich einfach einen harten Code verwendet, um eine Demo zu erstellen.
-
-  if (usernameInput.value === 'benutzername' && passwordInput.value === 'passwort') {
-    alert('Anmeldung erfolgreich!');
+  if (user === "justi" && pass === "justi") {
+    messageDiv.textContent = "Willkommen, Justi!";
+    messageDiv.style.color = "green";
   } else {
-    errorMessage.textContent = 'Ungültiger Benutzername oder Passwort';
-    form.appendChild(errorMessage);
+    messageDiv.textContent = "Falscher Benutzername oder Passwort.";
+    messageDiv.style.color = "red";
   }
 }
-
-function handleInputChange() {
-  if (errorMessage.parentNode) {
-    form.removeChild(errorMessage);
-  }
-}
-
-form.addEventListener('submit', handleFormSubmit);
-usernameInput.addEventListener('input', handleInputChange);
-passwordInput.addEventListener('input', handleInputChange);
