@@ -1,2 +1,3 @@
 # do-u-think-u-are-on-the-right-way
 Justi, you are maybe right here, but it could also be, that you need to watch somewhere else(tipp: read README)
+Hello Justi, if u alr found this, then you are realy good alr, but now there is the catch, you need to go on this website: https://youareontherightway.netlify.app/   as you propably know, you can get to other sites, by typing the name of the site after the last"/" what you are searching is on the login site... Well on the login site you need to try names tipp, you know that person (it can be a person on the list, but it also can be nat a person on the list) just type the name into the username and password field and see if its right...good luck :) 
